@@ -1,0 +1,82 @@
+/* fonts Start */
+@font-face {
+    font-family: Gabelisa;
+    src: url(../fonts/Gabelisa.ttf);
+}
+/* fonts end */
+header{
+    margin-top:25px;
+}
+
+h1 {
+    font-family: Gabelisa;
+    font-size:80px;
+    color:rgb(0, 119, 255)
+}
+
+/* isotope section */
+
+.portfolio_ul {
+    list-style:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio_ul li{
+    padding:10px 20px;
+    border:1px solid #eaeaea;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.portfolio_ul li:hover {
+    background-color: rgba(0, 89, 255, 0.952);
+    color:#fff;
+    border:1px solid rgba(0, 89, 255, 0.952);
+}
+
+/* isotope items */
+.isotope_items {
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    margin-top:40px;
+}
+
+.isotope_items img {
+    transition:0.9s;
+}
+
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:100%;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-color: rgba(34, 33, 33, 0.568);
+    transition:0.3s;
+}
+
+.overlay p {
+    text-align: center;
+}
+
+.isotope_items:hover .overlay {
+    top:0;
+}
+
+.isotope_items:hover img {
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: rgba(0, 89, 255, 0.952);
+    color:#fff;
+    border:1px solid rgba(0, 89, 255, 0.952);
+}
